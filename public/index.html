@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users API</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+        body {
+            background-color: #30638f;
+        }
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            background-color: rgb(85, 160, 240);
+            color: #fff;
+            padding: 15px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .list {
+            margin-top: 50px;
+        }
+
+        li {
+            list-style-type: none; 
+        }
+
+        a {
+            color: #abff00;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="title">
+                <h1>Welcome to my Users API :)</h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="link">
+                        <span>Consult the Users API endpoint (all) at <a href="/api/all?pretty">/api/all</a></span>
+                    </li>
+                    <li class="link">
+                        <span>Consult the Users API endpoint with pagination at <a href="/api/users?page=0&pretty">/api/users?page={pageId}</a></span>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
