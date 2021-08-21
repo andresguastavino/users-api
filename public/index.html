@@ -26,6 +26,7 @@
         }
 
         main {
+            max-width: 800px;
             background-color: rgb(85, 160, 240);
             color: #fff;
             padding: 15px;
@@ -47,6 +48,10 @@
             color: #abff00;
             text-decoration: underline;
         }
+
+        .link {
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
@@ -58,10 +63,30 @@
             <div class="list">
                 <ul>
                     <li class="link">
-                        <span>Consult the Users API endpoint (all) at <a href="/api/all?pretty">/api/all</a></span>
+                        <span>
+                            Consult the Users API endpoint (all users) at <a href="/api/all?pretty">/api/all</a>
+                        </span>
                     </li>
                     <li class="link">
-                        <span>Consult the Users API endpoint with pagination at <a href="/api/users?page=0&pretty">/api/users?page={pageId}</a></span>
+                        <span>
+                            Consult the Users API endpoint with unvalidated pagination (i.e. if you fetch page=-1 
+                            it will let you but will not return any results) at 
+                            <a href="/api/users?page=0&pretty">/api/users?page={pageId}</a>
+                        </span>
+                    </li>
+                    <li class="link">
+                        <span>
+                            Consult the Users API endpoint with validated pagination (i.e. if you fetch page=-1 
+                            it will return page=0, or if you fetch page=6 and count (total number of users) is 
+                            43 it will return page=4) appending "&validated" to the unvalidated pagination 
+                            endpoint <a href="/api/users?page=0&pretty&validated">/api/users?page={pageId}&validated</a>
+                        </span>
+                    </li>
+                    <li class="link">
+                        <span>
+                            Add "pretty" query to the endpoint if you want to prettify it :) i.e. 
+                            <a href="/api/all?pretty">/api/all?pretty</a>
+                        </span>
                     </li>
                 </ul>
             </div>

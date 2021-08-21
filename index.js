@@ -28,8 +28,24 @@ app.get('/api/all', (req, res) => {
     res.json(response);
 });
 
-app.get('/api/users', (req, res) => {
-    let page = req.query.page || 0;
+const getUnvalidatedRespone = (page) => {
+    const usersPerPage = 10;
+    const limitMin = 0 + (page * 10);
+    const limitMax = (page * 10) + usersPerPage > usersData.length ? usersData.length : (page * 10) + usersPerPage;
+
+    const results = [];
+    for(let i = limitMin; i < limitMax; i++) {
+        usersData[i] && results.push(usersData[i]);
+    }
+
+    return {
+        count: usersData.length,
+        page,
+        results
+    };
+}
+
+const getValidatedResponse = (page) => {
     // Preventing negative numbers to be used
     const firstPage = 0;
     page = page >= firstPage ? page : firstPage;
@@ -46,11 +62,17 @@ app.get('/api/users', (req, res) => {
         results.push(usersData[i]);
     }
     
-    const response = {
+    return {
         count: usersData.length,
         page,
         results
-    }
+    };
+}
+
+app.get('/api/users', (req, res) => {
+    const page = req.query.page !== undefined ? parseInt(req.query.page) : 0;
+    const validate = req.query.validated === '';
+    const response = validate ?  getValidatedResponse(page) : getUnvalidatedRespone(page);
 
     res.header("Content-Type", 'application/json');
     res.json(response);
