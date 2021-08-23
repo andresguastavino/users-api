@@ -13,7 +13,7 @@ app.use(
 );
 app.options('*', cors());
 app.use(pretty({ query: 'pretty' }));
-app.use(express.static(staticPath));
+app.use('/static', express.static(staticPath));
 app.use(express.urlencoded ({ extended: false }));
 app.use(express.json());
 
