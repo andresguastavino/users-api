@@ -22,7 +22,7 @@ function Main() {
                     </p>
                     <Snippet 
                         method={'GET'}
-                        endpoint={'https://rickandmortyapi.com/api'}
+                        endpoint={'https://users-list-api.herokuapp.com/api'}
                     >
                         <div className="First">
                             <span className="Bracket">{'{'}</span>
