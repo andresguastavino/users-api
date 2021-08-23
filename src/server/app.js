@@ -24,8 +24,6 @@ app.use('/', homeRouter);
 // ruteos para API REST
 const apiAllRouter = require('./routes/api/all');
 const apiUsersRouter = require('./routes/api/users');
-const exp = require('constants');
-const { stat } = require('fs');
 
 app.use('/api/all', apiAllRouter);
 app.use('/api/users', apiUsersRouter);
