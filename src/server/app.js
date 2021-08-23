@@ -22,9 +22,11 @@ const homeRouter = require('./routes/home');
 app.use('/', homeRouter);
 
 // ruteos para API REST
+const apiIndexRouter = require('./routes/api/index');
 const apiAllRouter = require('./routes/api/all');
 const apiUsersRouter = require('./routes/api/users');
 
+app.use('/api', apiIndexRouter);
 app.use('/api/all', apiAllRouter);
 app.use('/api/users', apiUsersRouter);
 

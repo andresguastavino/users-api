@@ -1,11 +1,8 @@
-const path = require('path');
-const usersData = require(path.resolve('public/users.json'));
-
 const allApiController = {
     list: (req, res) => {
         const response = {
-            count: usersData.length,
-            results: usersData
+            all: 'https://users-list-api.herokuapp.com/api/all',
+            users: 'https://users-list-api.herokuapp.com/api/users'
         }
             
         res.status(200).json(response);
