@@ -1,9 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const pretty = require('express-prettify');
+const path = require('path');
+const staticPath = path.resolve('/build/static');
 
 const app = express();
-
 app.use(
     cors({
         credentials: true,
@@ -12,6 +13,7 @@ app.use(
 );
 app.options('*', cors());
 app.use(pretty({ query: 'pretty' }));
+app.use(express.static(staticPath));
 app.use(express.urlencoded ({ extended: false }));
 app.use(express.json());
 
@@ -23,6 +25,8 @@ app.use('/', homeRouter);
 // ruteos para API REST
 const apiAllRouter = require('./routes/api/all');
 const apiUsersRouter = require('./routes/api/users');
+const exp = require('constants');
+const { stat } = require('fs');
 
 app.use('/api/all', apiAllRouter);
 app.use('/api/users', apiUsersRouter);
