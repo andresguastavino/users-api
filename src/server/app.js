@@ -12,21 +12,9 @@ app.use(
 );
 app.options('*', cors());
 app.use(pretty({ query: 'pretty' }));
+app.use(express.static(path.join(__dirname, '../../build')));
 app.use(express.urlencoded ({ extended: false }));
 app.use(express.json());
-
-// paths
-const publicPath = path.resolve('/public');
-const buildPath = path.resolve('/build');
-const staticPath = path.resolve('/build/static');
-const staticJsPath = path.resolve('/build/static/js');
-const staticCssPath = path.resolve('/build/static/css');
-
-app.use(express.static(publicPath));
-app.use(express.static(buildPath));
-app.use('/static', express.static(staticPath));
-app.use('/static/js', express.static(staticJsPath));
-app.use('/static/css', express.static(staticCssPath));
 
 // ruteos para vistas
 const homeRouter = require('./routes/home');
