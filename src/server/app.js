@@ -18,7 +18,7 @@ app.use(express.json());
 // paths
 const publicPath = path.resolve('/public');
 const buildPath = path.resolve('/build');
-const staticPath = path.resolve('/build/static');
+const staticPath = path.resolve('/build/static/');
 
 app.use(express.static(publicPath));
 app.use(express.static(buildPath));
