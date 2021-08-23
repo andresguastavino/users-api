@@ -1,5 +1,5 @@
 const path = require('path');
-const indexPath = path.resolve('./public/index.html');
+const indexPath = path.resolve('/build/index.html');
 
 const homeController = {
     index: (req, res) => {

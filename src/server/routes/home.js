@@ -7,9 +7,4 @@ router.get(
     homeController.index
 );
 
-router.get(
-    '/home',
-    homeController.index
-);
-
 module.exports = router;
