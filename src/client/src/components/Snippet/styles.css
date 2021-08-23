@@ -1,0 +1,44 @@
+div.Snippet {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #202329;
+}
+
+div.Snippet > div.Head {
+    border-bottom: 1px solid #ecebeb;
+    padding-bottom: 10px;
+}
+
+div.Snippet > div.Head > span.Method {
+    color: #31ff80;
+}
+
+div.Snippet > div.Head > span.Endpoint {
+    color: #3a6ae8;
+    margin-left: 20px;
+}
+
+div.Snippet > div.Response {
+    padding-top: 10px;
+    color: palevioletred;
+}
+
+span {
+    font-weight: 600;
+}
+
+span.Value {
+    margin-left: 10px;
+}
+
+div.Snippet > div.Response > div.Inner-x {
+    margin-left: 20px;
+}
+
+div.Snippet > div.Response > div.Inner-xx {
+    margin-left: 40px;
+}
+
+div.Snippet > div.Response > div.Inner-xxx {
+    margin-left: 60px;
+}

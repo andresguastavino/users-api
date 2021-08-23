@@ -1,6 +1,24 @@
-.Main {
+main.Main {
+    overflow-y: scroll;
     width: 75%;
     border-left: 1px solid #272635;
     background-color: #ecebeb;
     color: #272635;
+    padding: 20px 20px 0px 20px;
+}
+
+span.Highlighted {
+    background-color:#4740401c;
+    color: #1c2f86bf;
+    padding: 0px 5px;
+    margin: 0 2px;
+    font-weight: 500;
+}
+
+span.Underlined {
+    text-decoration: underline;
+    color: #1c2f86bf;
+    font-weight: 500;
+    padding: 0px 5px;
+    margin: 0 2px;
 }

@@ -1,0 +1,20 @@
+article.Article {
+    margin-left: 10px;
+}
+
+article.Article > div.Title {
+    margin: 10px 0;
+}
+
+article.Article > div.Body p {
+    margin: 15px 0;
+}
+
+article.Article > div.Body ul {
+    margin-bottom: 20px;
+}
+
+article.Article > div.Body ul li {
+    list-style-type: none;
+    margin-left: 15px;
+}

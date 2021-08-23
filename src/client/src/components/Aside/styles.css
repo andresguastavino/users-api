@@ -1,7 +1,13 @@
-.Aside {
+aside.Aside {
     width: 25%;
     height: 100%;
-    padding: 5px 10px;
+    padding: 5px 20px;
     background-color: #ecebeb;
     color: #272635;
+}
+
+aside.Aside > div.List > ul > li {
+    list-style-type: none;
+    margin: 2px 0;
+    margin-left: 5px;
 }
