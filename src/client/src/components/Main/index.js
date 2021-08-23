@@ -176,7 +176,7 @@ function Main() {
                 </Article>
                 <Article title={'Get users paginated'} id={'users-paginated'}>
                     <p>
-                        You can access get the users paginated by using the<span className="Highlighted">/users</span>endpoint.
+                        You can get the users paginated by using the<span className="Highlighted">/users</span>endpoint.
                     </p>
                     <p>
                         The API will automatically paginate the responses. You will receive up to 10 users per page.
