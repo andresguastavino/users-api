@@ -16,9 +16,9 @@ app.use(express.urlencoded ({ extended: false }));
 app.use(express.json());
 
 // ruteos para vistas
-// const homeRouter = require('./routes/home');
+const homeRouter = require('./routes/home');
 
-// app.use('/', homeRouter);
+app.use('/', homeRouter);
 
 // ruteos para API REST
 const apiAllRouter = require('./routes/api/all');
