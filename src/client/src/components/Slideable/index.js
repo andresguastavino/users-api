@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import './styles.css';
 
 function Slideable({closedAside}) {
@@ -15,11 +16,13 @@ function Slideable({closedAside}) {
     function showAside() {
         document.querySelector('main.Main').style.display = 'none';
         document.querySelector('aside.Aside').style.display = 'block';
+        document.querySelector('div.Button-Container button').style.borderWidth = '5px 0px 5px 5px';
     }
 
     function showMain() {
         document.querySelector('main.Main').style.display = 'block';
         document.querySelector('aside.Aside').style.display = 'none';
+        document.querySelector('div.Button-Container button').style.borderWidth = '5px 5px 5px 0px';
     }
 
     function handleClick() {
@@ -32,8 +35,8 @@ function Slideable({closedAside}) {
                 <button onClick={handleClick}>      
                     {
                         asideVisible ?
-                            '<' :
-                            '>'
+                            <AiFillCaretLeft /> :
+                            <AiFillCaretRight />
                     }
                 </button>
             </div>

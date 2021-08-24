@@ -1,7 +1,6 @@
 import Section from '../Section';
 import Article from '../Article';
 import Snippet from '../Snippet';
-
 import './styles.css';
 
 function Main() {
@@ -28,11 +27,14 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"all":</span>
+                            <span className="Key">"all"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'https://users-list-api.herokuapp.com/api/all'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"users":</span>
+                            <span className="Key">"users"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'https://users-list-api.herokuapp.com/api/users'</span>
                         </div>
                         <div className="First">
@@ -69,26 +71,34 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"count":</span>
-                            <span className="Value">5</span>
+                            <span className="Key">"count"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">5</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"results":</span>
-                            <span className="Value">[</span>
+                            <span className="Key">"results"</span>
+                            <span className="Colon">:</span>
+                            <span className="Square-Bracket">[</span>
                         </div>
                         <div className="Inner-xx">
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">1</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">1</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Juan'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Robledo'</span>
                         </div>
                         <div className="Inner-xx">
@@ -98,15 +108,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">2</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">2</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Tony'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Stark'</span>
                         </div>
                         <div className="Inner-xx">
@@ -116,15 +131,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">3</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">3</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Peter'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Parker'</span>
                         </div>
                         <div className="Inner-xx">
@@ -134,15 +154,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">4</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">4</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Sofia'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Roseli'</span>
                         </div>
                         <div className="Inner-xx">
@@ -152,15 +177,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">5</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">5</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Andres'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Guastavino'</span>
                         </div>
                         <div className="Inner-xx">
@@ -189,30 +219,40 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"count":</span>
-                            <span className="Value">43</span>
+                            <span className="Key">"count"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">43</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"page":</span>
-                            <span className="Value">2</span>
+                            <span className="Key">"page"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">2</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"results":</span>
-                            <span className="Value">[</span>
+                            <span className="Key">"results"</span>
+                            <span className="Colon">:</span>
+                            <span className="Square-Bracket">[</span>
                         </div>
                         <div className="Inner-xx">
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">21</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">21</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Juan'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Robledo'</span>
                         </div>
                         <div className="Inner-xx">
@@ -222,15 +262,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">22</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">22</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Tony'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Stark'</span>
                         </div>
                         <div className="Inner-xx">
@@ -240,15 +285,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">23</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">23</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Peter'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Parker'</span>
                         </div>
                         <div className="Inner-xx">
@@ -258,15 +308,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">24</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">24</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Sofia'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Roseli'</span>
                         </div>
                         <div className="Inner-xx">
@@ -276,15 +331,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">25</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">25</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Andres'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Guastavino'</span>
                         </div>
                         <div className="Inner-xx">
@@ -294,15 +354,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">26</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">26</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Simon'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Fort'</span>
                         </div>
                         <div className="Inner-xx">
@@ -312,15 +377,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">27</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">27</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Clara'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Palommo'</span>
                         </div>
                         <div className="Inner-xx">
@@ -330,15 +400,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">28</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">28</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Juan'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Camilo'</span>
                         </div>
                         <div className="Inner-xx">
@@ -348,15 +423,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">29</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">29</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Roxana'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Johnson'</span>
                         </div>
                         <div className="Inner-xx">
@@ -366,15 +446,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">30</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">30</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Eduardo'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Gomez'</span>
                         </div>
                         <div className="Inner-xx">
@@ -410,16 +495,21 @@ function Main() {
                         <span className="Bracket">{'{'}</span>
                     </div>
                     <div className="Inner-x">
-                        <span className="Key">"count":</span>
-                        <span className="Value">43</span>
+                        <span className="Key">"count"</span>
+                        <span className="Colon">:</span>
+                        <span className="Value Number">43</span>
+                        <span className="Comma">,</span>
                     </div>
                     <div className="Inner-x">
-                        <span className="Key">"page":</span>
-                        <span className="Value">7</span>
+                        <span className="Key">"page"</span>
+                        <span className="Colon">:</span>
+                        <span className="Value Number">7</span>
+                        <span className="Comma">,</span>
                     </div>
                     <div className="Inner-x">
-                        <span className="Key">"results":</span>
-                        <span className="Value">[]</span>
+                        <span className="Key">"results"</span>
+                        <span className="Colon">:</span>
+                        <span className="Square-Bracket">[]</span>
                     </div>
                     <div className="First">
                         <span className="Bracket">{'}'}</span>
@@ -448,30 +538,40 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"count":</span>
-                            <span className="Value">43</span>
+                            <span className="Key">"count"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">43</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"page":</span>
-                            <span className="Value">4</span>
+                            <span className="Key">"page"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">4</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-x">
-                            <span className="Key">"results":</span>
-                            <span className="Value">[</span>
+                            <span className="Key">"results"</span>
+                            <span className="Colon">:</span>
+                            <span className="Square-Bracket">[</span>
                         </div>
                         <div className="Inner-xx">
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">41</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">41</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Carlos'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Menem'</span>
                         </div>
                         <div className="Inner-xx">
@@ -481,15 +581,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">42</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">42</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Antonio'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Estrella'</span>
                         </div>
                         <div className="Inner-xx">
@@ -499,15 +604,20 @@ function Main() {
                             <span className="Bracket">{'{'}</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"id":</span>
-                            <span className="Value">43</span>
+                            <span className="Key">"id"</span>
+                            <span className="Colon">:</span>
+                            <span className="Value Number">43</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"firstName":</span>
+                            <span className="Key">"firstName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Ricardo'</span>
+                            <span className="Comma">,</span>
                         </div>
                         <div className="Inner-xxx">
-                            <span className="Key">"lastName":</span>
+                            <span className="Key">"lastName"</span>
+                            <span className="Colon">:</span>
                             <span className="Value">'Darin'</span>
                         </div>
                         <div className="Inner-xx">

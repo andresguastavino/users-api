@@ -20,14 +20,30 @@ div.Snippet > div.Head > span.Endpoint {
 
 div.Snippet > div.Response {
     padding-top: 10px;
-    color: palevioletred;
+    color: orange;
 }
 
 span {
+    font-weight: 500;
+}
+
+span.Key, span.Value {
     font-weight: 600;
 }
 
+span.Key {
+    color: #db56c5;
+}
+
 span.Value {
+    color: rgb(0, 197, 43);
+}
+
+span.Number {
+    color: orangered;
+}
+
+span.Value, span.Square-Bracket {
     margin-left: 10px;
 }
 
