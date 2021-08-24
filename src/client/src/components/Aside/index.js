@@ -1,6 +1,18 @@
+import { useEffect } from 'react';
 import './styles.css';
 
-function Aside() {
+function Aside({handleClose}) {
+
+    useEffect(() => {
+        document.querySelectorAll('div.List a')
+            .forEach(linkElement => {
+                linkElement.onclick = () => {
+                    if(window.innerWidth < 720) {
+                        handleClose();
+                    }
+                }
+            });
+    }, []);
 
     return(
         <aside className="Aside">

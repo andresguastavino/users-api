@@ -1,7 +1,6 @@
 main.Main {
+    width: 95%;
     overflow-y: scroll;
-    width: 75%;
-    border-left: 1px solid #272635;
     background-color: #ecebeb;
     color: #272635;
     padding: 20px 20px 0px 20px;
@@ -21,4 +20,12 @@ span.Underlined {
     font-weight: 500;
     padding: 0px 5px;
     margin: 0 2px;
+}
+
+@media (min-width: 720px) {
+    main.Main {
+        width: 75%;
+        display: block;
+        border-left: 1px solid #272635;
+    }
 }
