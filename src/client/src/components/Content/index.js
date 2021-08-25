@@ -24,7 +24,10 @@ function Content() {
             document.querySelector('main.Main').style.display = 'block';
         } else {
             document.querySelector('div.Slideable').style.display = 'block';
-            document.querySelector('aside.Aside').style.display = 'none';
+            const aside = document.querySelector('aside.Aside');
+            if(aside.style.display !== 'block') {
+                aside.style.display = 'none';
+            }
         }
     }
 
