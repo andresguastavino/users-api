@@ -29,14 +29,12 @@ const apiUsersRouter = require('./routes/api/users');
 app.use('/api', apiIndexRouter);
 app.use('/api/all', apiAllRouter);
 app.use('/api/users', apiUsersRouter);
-
-app.use((req, res, next) => {
+app.use('/api/*', (req, res) => {
     res.status(404).json({
         status: 'error',
         statusCode: 404,
         message: 'not found'
     });
-    next();
 })
 
 app.listen(process.env.PORT || 3001, () => {console.log('App is listening on port 3001')});
