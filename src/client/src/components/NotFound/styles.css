@@ -1,0 +1,35 @@
+div.NotFound {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecebeb;
+}
+
+div.Modal {
+    width: 99%;
+    text-align: center;
+}
+
+div.Modal > div.Title {
+    padding: 10px;
+    background-color: #272635;
+    color: #fff;
+}
+
+div.Modal > div.Body {
+    padding: 20px;
+    border: 2px solid #1c2f86bf;
+    border-top: 0px;
+}
+
+div.Modal > div.Body > p {
+    margin-bottom: 5px;
+}
+
+@media (min-width: 720px) {
+    div.Modal {
+        width: 50%;
+    }
+}
